@@ -11,3 +11,4 @@ class TestSkypeLogin:
         lp = LaunchPage(self.driver)
         lp.Navigate_to_the_URL()
         lp.Permissions_interaction()
+        lp.Exprience()

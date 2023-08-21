@@ -40,9 +40,15 @@ class LaunchPage():
             EC.element_to_be_clickable((By.XPATH,
                                         "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button"))).click()
 
-
         WebDriverWait(self.driver, 10).until(
             EC.visibility_of_element_located((By.XPATH, "//android.widget.Image[@text='target-brx7nmia36']"))).click()
 
-        time.sleep(10)
-    # def Exprience(self):
+        time.sleep(30)
+
+    def Exprience(self):
+        WebDriverWait(self.driver, 10).until(
+            EC.visibility_of_element_located((By.XPATH, "//android.widget.TextView[@text='menuOptionUniversalDose']"))).click()
+        WebDriverWait(self.driver,10).until(
+            EC.visibility_of_element_located((By.XPATH, "//android.widget.Image[@text='icon_burger_menu-s1hjgu57gc']"))).click()
+        WebDriverWait(self.driver, 10).until(
+            EC.visibility_of_element_located((By.XPATH, "//android.widget.TextView[@text='Soin du linge']"))).click()
