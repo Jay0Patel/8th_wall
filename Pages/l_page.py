@@ -42,14 +42,14 @@ class LaunchPage():
 
         WebDriverWait(self.driver, 10).until(
             EC.visibility_of_element_located((By.XPATH, "//android.widget.Image[@text='target-brx7nmia36']"))).click()
-        WebDriverWait(self.driver, 10).until(
-            EC.visibility_of_element_located(
-                (By.XPATH, "//android.widget.Image[@text='icon_subtitles-dif91f04l7']"))).click()
         time.sleep(40)
 
     def Exprience(self):
-        for i in range(2):
             time.sleep(3)
+            WebDriverWait(self.driver, 10).until(
+                EC.visibility_of_element_located(
+                    (By.XPATH, "//android.widget.Image[@text='icon_subtitles-dif91f04l7']"))).click()
+            time.sleep(2)
             WebDriverWait(self.driver, 10).until(
                 EC.visibility_of_element_located((By.XPATH,
                                               "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View/android.view.View[1]/android.view.View/android.view.View[1]"))).click()
@@ -67,10 +67,10 @@ class LaunchPage():
             time.sleep(5)
             WebDriverWait(self.driver, 10).until(
                 EC.visibility_of_element_located(
-                    (By.XPATH, "//android.widget.Image[@text='Gain de temps']"))).click()
+                    (By.XPATH, "//android.widget.TextView[@text='Gain de temps']"))).click()
             time.sleep(5)
             WebDriverWait(self.driver,10).until(
                 EC.visibility_of_element_located(
-                    (By.XPATH, "//android.widget.Image[@text='icon_recentre-bps7nku8k6']"))).click()
+                    (By.XPATH, "//android.view.View[@resource-id='relocateButton']"))).click()
             time.sleep(10)
 
