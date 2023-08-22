@@ -42,13 +42,16 @@ class LaunchPage():
 
         WebDriverWait(self.driver, 10).until(
             EC.visibility_of_element_located((By.XPATH, "//android.widget.Image[@text='target-brx7nmia36']"))).click()
-
-        time.sleep(30)
+        WebDriverWait(self.driver, 10).until(
+            EC.visibility_of_element_located((By.XPATH, "//android.widget.Image[@text='icon_subtitles-dif91f04l7']"))).click()
+        time.sleep(40)
 
     def Exprience(self):
+        time.sleep(3)
         WebDriverWait(self.driver, 10).until(
-            EC.visibility_of_element_located((By.XPATH, "//android.widget.TextView[@text='menuOptionUniversalDose']"))).click()
+            EC.visibility_of_element_located((By.XPATH, "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View/android.view.View[1]/android.view.View/android.view.View[1]"))).click()
         WebDriverWait(self.driver,10).until(
             EC.visibility_of_element_located((By.XPATH, "//android.widget.Image[@text='icon_burger_menu-s1hjgu57gc']"))).click()
-        WebDriverWait(self.driver, 10).until(
-            EC.visibility_of_element_located((By.XPATH, "//android.widget.TextView[@text='Soin du linge']"))).click()
+        # WebDriverWait(self.driver, 10).until(
+        #     EC.visibility_of_element_located((By.XPATH, "//android.widget.TextView[@text='Soin du linge']"))).click()
+        time.sleep(10)
