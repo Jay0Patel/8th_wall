@@ -7,7 +7,7 @@ def setup(request):
     capabilities = {
         'platformName': 'Android',
         'automationName': 'uiautomator2',
-        'deviceName': 'RZCR301GKCM',
+        'deviceName': 'RZCR301GKCM',  #pixel6
         "appPackage": 'com.android.chrome',
         "appActivity": 'com.google.android.apps.chrome.Main'
         # "appPackage": 'com.sec.android.app.sbrowser',
